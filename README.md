@@ -32,11 +32,15 @@ Run all implemented benchmarks:
 ./scripts/run_all.sh
 ```
 
-Run the first benchmark directly:
+Run the first benchmark scaffold directly:
 
 ```sh
 ./build/benchmarks/cache_stride --size-mb 512 --iterations 5 --output results/cache_stride.csv
 ```
+
+`cache_stride.cpp` currently contains TODOs on purpose. It builds and exercises
+the CLI/CSV plumbing, but you should implement the benchmark logic yourself
+before treating the output as real measurements.
 
 For a quick smoke test:
 
